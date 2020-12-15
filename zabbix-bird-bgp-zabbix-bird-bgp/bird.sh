@@ -9,4 +9,4 @@ $2 == "BGP" {
   printf "%s{\"{#PEERNAME}\":\"%s\"}", sep, $1;
   if (sep == "") { sep = ", " }
 }
-END { if (sep != "") { print "]}" } }
+END { if (sep != "") { print "]}" } }'
